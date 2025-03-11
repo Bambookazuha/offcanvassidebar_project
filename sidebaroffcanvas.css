@@ -1,0 +1,21 @@
+body {
+    font-family: "Indie Flower", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+@media screen and (max-width:768px) {
+    .navbar-brand{
+        display: flex;
+        margin: auto;
+    }
+}
+li {
+    font-size: 20px;
+}
+p {
+    font-size: 18px;
+}
+.nav-link:hover {
+    background-color: rgb(74, 186, 211);
+    border-radius: 10px;
+}

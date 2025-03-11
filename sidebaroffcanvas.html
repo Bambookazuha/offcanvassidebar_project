@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidebar</title>
+     <!--Bootstrap CDN inks -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="shasha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+     <!--Bootstrap icon CDN-->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Spicy+Rice&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="sidebaroffcanvas.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-md bg-light sticky-top">
+        <button class="btn btn-info-subtle d-md-none d-sm" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas_id">Menu <span><i class="bi bi-caret-down-fill"></i></span></button>
+        <!-- navbar brand as image -->
+            <a href="#" class="navbar-brand"><img src="image/fr1.jpg" alt="brand" width="60px" height="60px" class="ms-lg-4"></a>
+         <!-- toggler button -->
+          <button type="button" class="navbar-toggler me-5" data-bs-toggle="collapse" data-bs-target="#nav_id"><span class="navbar-toggler-icon"></span></button></button>
+          <!-- nav items container -->
+           <div class="collapse navbar-collapse" id="nav_id">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a href="#" class="nav-link active">Home</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+                <li class="nav-item dropdown"><a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Services</a>
+                    <ul class="dropdown-menu bg-primary-subtle">
+                        <li><a href="#" class="dropdown-item">Service 1</a></li>
+                        <li><a href="#" class="dropdown-item">Service 2</a></li>
+                        <li><a href="#" class="dropdown-item">Service 3</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="navbar-nav ms-auto me-5">
+                <li class="nav-item"><a href="#login_modal" class="nav-link" data-bs-toggle="modal">Log In</a></li>
+                <li class="nav-item"><a href="#register_modal" class="nav-link" data-bs-toggle="modal">Register</a></li>
+            </ul>
+           </div>
+    </nav>
+    <div class="offcanvas offcanvas-end offcanvas-expand-lg show bg-light" data-bs-scroll="true" data-bs-backdrop="false" id="offcanvas_id">
+        <div class="offcanvas-header">
+            <h3 class="offcanvas-title">IGCSE Subjects<hr style="width: 180%;"></h3>
+            <button type="button" class="btn-close d-lg-none" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-11">
+                        <ul class="flex-column nav justify-content-center">
+                            <p>Main subjects:</p>
+                            <li class="nav-item mb-2 bg-info-subtle"  style="border-radius: 10px;"><a href="#english" class="nav-link active" data-bs-toggle="tab">English</a></li>
+                            <li class="nav-item mt-3 bg-warning-subtle" style="border-radius: 10px;"><a href="#math" class="nav-link" data-bs-toggle="tab">Math</a></li>
+                            <li class="nav-item mt-3 bg-danger-subtle"  style="border-radius: 10px;"><a href="#WEB" class="nav-link" data-bs-toggle="tab">WEB</a></li>
+                            <p class="mt-3">Other subjects:</p>
+                            <li class="nav-item mt-3 bg-success-subtle" style="border-radius: 10px;"><a href="#accounting" class="nav-link" data-bs-toggle="tab">Accounting</a></li>
+                            <li class="nav-item mt-3" style="background-color: rgb(247, 170, 170); border-radius: 10px;"><a href="#sociology" class="nav-link" data-bs-toggle="tab">Sociology</a></li>
+                            <li class="nav-item mt-3" style="background-color: rgb(214, 247, 170); border-radius: 10px;"><a href="#psychology" class="nav-link" data-bs-toggle="tab">Psychology</a></li>
+                            <li class="nav-item mt-3" style="background-color: rgb(170, 180, 247); border-radius: 10px;"><a href="#science" class="nav-link" data-bs-toggle="tab">Science</a></li>
+                            <li class="nav-item mt-3" style="background-color: rgb(218, 170, 247); border-radius: 10px;"><a href="#geography" class="nav-link" data-bs-toggle="tab">Geography</a></li>
+                            <li class="nav-item mt-3" style="background-color: rgb(247, 228, 170); border-radius: 10px;"><a href="#economic" class="nav-link" data-bs-toggle="tab">Economic</a></li>
+                            <li class="nav-item mt-3" style="background-color: rgb(247, 170, 203); border-radius: 10px;"><a href="#math_b" class="nav-link" data-bs-toggle="tab">Math B</a></li>
+                            <li class="nav-item mt-3" style="background-color: rgb(247, 170, 170); border-radius: 10px;"><a href="#Further_pure_math" class="nav-link" data-bs-toggle="tab">Further pure math</a></li>
+                            <li class="nav-item mt-3" style="background-color: rgb(188, 158, 241); border-radius: 10px;"><a href="#spanish" class="nav-link" data-bs-toggle="tab">Spanish</a></li>
+                            <li class="nav-item mt-3" style="background-color: rgb(73, 238, 136); border-radius: 10px;"><a href="#business" class="nav-link" data-bs-toggle="tab">Business</a></li>
+                            <li class="nav-item mt-3" style="background-color: rgb(247, 165, 140); border-radius: 10px;"><a href="#Physical_edu" class="nav-link" data-bs-toggle="tab">Physical education</a></li>
+                            <li class="nav-item mt-3" style="background-color: rgb(88, 241, 147); border-radius: 10px;"><a href="#drama" class="nav-link" data-bs-toggle="tab">Drama</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-9 col-md-6">
+                <div>
+                    <div class="tab-content mt-5">
+                        <div class="tab-pane active" id="english">
+                            <h1><b>English</b></h1>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae, architecto. Sunt ratione aliquid totam architecto quae doloribus modi delectus veniam, dolor dolorem culpa quo et accusantium ipsam? Corporis, voluptas nulla.
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore deserunt voluptatum aperiam dolorum necessitatibus perspiciatis saepe hic quaerat! Saepe explicabo, neque blanditiis accusantium tempora ipsam excepturi qui ratione corporis ipsum?
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vel facilis quidem tempore nulla quibusdam nostrum quisquam, cumque nihil eaque reiciendis delectus obcaecati ipsa sed quas quam tempora. Sint, veniam.
+                            </p>            
+                            <h2><u>Why it is important?</u></h2>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum, magni alias veniam architecto animi cumque harum! Veniam, blanditiis, accusamus adipisci nemo perferendis dolores culpa error neque praesentium itaque ipsa obcaecati!
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam alias unde dicta odit rem ipsa, quam tempora eius amet earum, aliquid, fuga beatae pariatur soluta quo enim corporis ea iusto.
+                            </p>  
+                        </div>
+                        <div class="tab-pane mt-5" id="math">
+                            <h1><b>Math</b></h1>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum nam explicabo, exercitationem minus iste quod ipsam hic, cupiditate vel odit error quasi aperiam quisquam non maxime fugiat sapiente perferendis aliquid.
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure aut error officia sunt quo nihil dolor hic mollitia obcaecati ratione, eveniet doloremque temporibus amet exercitationem, quas alias, dolorum vitae non.
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat quod cupiditate incidunt voluptatem nihil labore ex beatae, commodi velit dignissimos explicabo reiciendis recusandae fuga ipsa reprehenderit voluptatum rem. Culpa, impedit.
+                            </p>
+                            <h2><u>Why it is important?</u></h2>
+                            <p>IGCSE Maths enhances critical thinking and problem-solving skills by teaching students to approach complex problems logically and break them down into manageable steps. These skills are transferable to various real-life situations, enabling students to make informed decisions and find creative solutions.
+                                It lays a strong foundation for more advanced mathematical concepts, which is essential for further studies in fields like science, technology, engineering, and mathematics (STEM).
+                                Studying IGCSE Maths opens doors to a wide range of career opportunities that require strong analytical skills, such as engineering, computer programming, data analysis, financial services, and research.</p>
+                        </div>
+                        <div class="tab-pane mt-5" id="WEB">
+                            <h1><b>WEB</b></h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit incidunt vel dolores explicabo ipsam doloremque animi ea ab et blanditiis quis illo nesciunt nostrum, sequi accusantium corporis suscipit! Quidem, hic!
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam obcaecati perspiciatis est fugit autem minus sequi et, perferendis facilis laudantium quas quisquam veniam animi possimus, dolore quae eaque ullam ipsa?
+                            </p>
+                            <h2><u>Why it is important?</u></h2>
+                            <p>The web provides students with a vast array of study materials, including <mark>online textbooks, revision notes, and practice exams.</mark>
+                                This accessibility helps students prepare for exams more effectively and stay updated with the latest study materials
+                                For subjects like <mark>Information and Communication Technology (ICT)</mark> understanding the web is crucial. Students learn about web pages, web servers, and how the internet functions, which are essential skills in today's digital age
+                            </p>
+                        </div>
+                        <div class="tab-pane mt-5" id="accounting">
+                            <h1><b>Accounting</b></h1>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae, architecto. Sunt ratione aliquid totam architecto quae doloribus modi delectus veniam, dolor dolorem culpa quo et accusantium ipsam? Corporis, voluptas nulla.
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore deserunt voluptatum aperiam dolorum necessitatibus perspiciatis saepe hic quaerat! Saepe explicabo, neque blanditiis accusantium tempora ipsam excepturi qui ratione corporis ipsum?
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vel facilis quidem tempore nulla quibusdam nostrum quisquam, cumque nihil eaque reiciendis delectus obcaecati ipsa sed quas quam tempora. Sint, veniam.
+                            </p>            
+                            <h2><u>Why it is important?</u></h2>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum, magni alias veniam architecto animi cumque harum! Veniam, blanditiis, accusamus adipisci nemo perferendis dolores culpa error neque praesentium itaque ipsa obcaecati!
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam alias unde dicta odit rem ipsa, quam tempora eius amet earum, aliquid, fuga beatae pariatur soluta quo enim corporis ea iusto.
+                            </p>  
+                        </div>
+                        <div class="tab-pane mt-5" id="sociology">
+                            <h1><b>Sociology</b></h1>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum nam explicabo, exercitationem minus iste quod ipsam hic, cupiditate vel odit error quasi aperiam quisquam non maxime fugiat sapiente perferendis aliquid.
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure aut error officia sunt quo nihil dolor hic mollitia obcaecati ratione, eveniet doloremque temporibus amet exercitationem, quas alias, dolorum vitae non.
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat quod cupiditate incidunt voluptatem nihil labore ex beatae, commodi velit dignissimos explicabo reiciendis recusandae fuga ipsa reprehenderit voluptatum rem. Culpa, impedit.
+                            </p>
+                            <h2><u>Why it is important?</u></h2>
+                            <p>Understanding Society – It teaches about social structures, cultures, and institutions like family, education, and government.
+                                Critical Thinking – It helps students analyze social issues, inequalities, and changes in society.
+                                Awareness of Social Problems – Topics like crime, poverty, and discrimination help students understand real-world challenges.
+                                Developing Research Skills – Students learn how to conduct surveys, interpret data, and evaluate sources.
+                                Preparation for Future Careers – Sociology provides useful knowledge for careers in law, social work, business, and more.</p>
+                        </div>
+                        <div class="tab-pane mt-5" id="psychology">
+                            <h1><b>Psychology</b></h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit incidunt vel dolores explicabo ipsam doloremque animi ea ab et blanditiis quis illo nesciunt nostrum, sequi accusantium corporis suscipit! Quidem, hic!
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam obcaecati perspiciatis est fugit autem minus sequi et, perferendis facilis laudantium quas quisquam veniam animi possimus, dolore quae eaque ullam ipsa?
+                            </p>
+                            <h2><u>Why it is important?</u></h2>
+                            <p>
+                                Psychology is important because it helps students understand how the human mind works and why people behave in certain ways.
+                                It explores topics like memory, personality, mental health, and social interactions. <mark>Studying psychology enhances critical thinking,</mark>
+                                problem-solving, and research skills, as students learn how to analyze human behavior using scientific methods. It also helps students
+                                <mark>understand mental health issues,</mark> which is valuable in everyday life and careers in healthcare, education, business, and counseling.
+                            </p>
+                        </div>
+                        <div class="tab-pane mt-5" id="science">
+                            <h1><b>Science</b></h1>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae, architecto. Sunt ratione aliquid totam architecto quae doloribus modi delectus veniam, dolor dolorem culpa quo et accusantium ipsam? Corporis, voluptas nulla.
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore deserunt voluptatum aperiam dolorum necessitatibus perspiciatis saepe hic quaerat! Saepe explicabo, neque blanditiis accusantium tempora ipsam excepturi qui ratione corporis ipsum?
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vel facilis quidem tempore nulla quibusdam nostrum quisquam, cumque nihil eaque reiciendis delectus obcaecati ipsa sed quas quam tempora. Sint, veniam.
+                            </p>            
+                            <h2><u>Why it is important?</u></h2>
+                            <p>Science is a core subject that explains the natural world and the laws that govern it.</p>
+                            <h2>Biology</h2>
+                            <p><mark>Biology</mark> helps students understand living organisms, including human anatomy, ecosystems, and genetics. It is essential for medical and environmental sciences.</p>
+                            <h2>Chemistry</h2>
+                            <p><mark>Chemistry</mark> explores substances, their properties, and how they interact. It is crucial in industries like medicine, engineering, and environmental science.</p>
+                            <h2>Physis</h2>
+                            <p><mark>Physics</mark> studies motion, energy, and forces, helping students understand the universe, from electricity to space exploration.</p>  
+                        </div>
+                        <div class="tab-pane mt-5" id="geography">
+                            <h1><b>Geography</b></h1>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum nam explicabo, exercitationem minus iste quod ipsam hic, cupiditate vel odit error quasi aperiam quisquam non maxime fugiat sapiente perferendis aliquid.
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure aut error officia sunt quo nihil dolor hic mollitia obcaecati ratione, eveniet doloremque temporibus amet exercitationem, quas alias, dolorum vitae non.
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat quod cupiditate incidunt voluptatem nihil labore ex beatae, commodi velit dignissimos explicabo reiciendis recusandae fuga ipsa reprehenderit voluptatum rem. Culpa, impedit.
+                            </p>
+                            <h2><u>Why it is important?</u></h2>
+                            <p>Geography teaches students about the physical world, climate, and how human activities shape the environment.
+                                It covers topics like natural disasters, population growth, and sustainable development. By studying geography,
+                                students gain awareness of global issues such as climate change, resource management, and urbanization.
+                                It also helps with map reading, data analysis, and critical thinking. Geography is useful for careers in urban
+                                planning, environmental science, disaster management, and tourism.</p>
+                        </div>
+                        <div class="tab-pane mt-5" id="economic">
+                            <h1><b>Economic</b></h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit incidunt vel dolores explicabo ipsam doloremque animi ea ab et blanditiis quis illo nesciunt nostrum, sequi accusantium corporis suscipit! Quidem, hic!
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam obcaecati perspiciatis est fugit autem minus sequi et, perferendis facilis laudantium quas quisquam veniam animi possimus, dolore quae eaque ullam ipsa?
+                            </p>
+                            <h2><u>Why it is important?</u></h2>
+                            <p>
+                                Economics explains how money, trade, and markets work. It helps students understand concepts like <mark>supply and demand, inflation, and economic policies.</mark>
+                                Learning economics develops <mark> analytical and decision-making skills, as students analyze how governments, businesses, and individuals make financial choices.</mark>
+                                It is particularly useful for those interested in finance, business, law, and policymaking. Economics also helps students make informed financial decisions in their personal lives.
+                            </p>
+                        </div>
+                        <div class="tab-pane mt-5" id="math_b">
+                            <h1><b>Mathematics B</b></h1>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum nam explicabo, exercitationem minus iste quod ipsam hic, cupiditate vel odit error quasi aperiam quisquam non maxime fugiat sapiente perferendis aliquid.
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure aut error officia sunt quo nihil dolor hic mollitia obcaecati ratione, eveniet doloremque temporibus amet exercitationem, quas alias, dolorum vitae non.
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat quod cupiditate incidunt voluptatem nihil labore ex beatae, commodi velit dignissimos explicabo reiciendis recusandae fuga ipsa reprehenderit voluptatum rem. Culpa, impedit.
+                            </p>
+                            <h2><u>Why it is important?</u></h2>
+                            <p>Mathematics B covers core mathematical skills that are essential in daily life and many careers. It includes algebra, geometry,
+                                statistics, and probability, helping students develop problem-solving and logical thinking skills. Math is the foundation for fields
+                                like engineering, finance, computing, and data science. Even in everyday life, math is used for budgeting, measuring,
+                                and decision-making</p>
+                        </div>
+                        <div class="tab-pane mt-5" id="Further_pure_math">
+                            <h1><b>Further Pure Mathematics</b></h1>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum nam explicabo, exercitationem minus iste quod ipsam hic, cupiditate vel odit error quasi aperiam quisquam non maxime fugiat sapiente perferendis aliquid.
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure aut error officia sunt quo nihil dolor hic mollitia obcaecati ratione, eveniet doloremque temporibus amet exercitationem, quas alias, dolorum vitae non.
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat quod cupiditate incidunt voluptatem nihil labore ex beatae, commodi velit dignissimos explicabo reiciendis recusandae fuga ipsa reprehenderit voluptatum rem. Culpa, impedit.
+                            </p>
+                            <h2><u>Why it is important?</u></h2>
+                            <p>Further Pure Mathematics is an advanced level of math that focuses on more complex topics like calculus,
+                                matrices, and advanced algebra. It is important for students who want to pursue careers in engineering,
+                                physics, economics, or computer science. This subject enhances logical reasoning, abstract thinking, and
+                                analytical skills, which are useful in scientific and technological fields.
+                            </p>
+                        </div>
+                        <div class="tab-pane mt-5" id="spanish">
+                            <h1><b>Spanish</b></h1>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum nam explicabo, exercitationem minus iste quod ipsam hic, cupiditate vel odit error quasi aperiam quisquam non maxime fugiat sapiente perferendis aliquid.
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure aut error officia sunt quo nihil dolor hic mollitia obcaecati ratione, eveniet doloremque temporibus amet exercitationem, quas alias, dolorum vitae non.
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat quod cupiditate incidunt voluptatem nihil labore ex beatae, commodi velit dignissimos explicabo reiciendis recusandae fuga ipsa reprehenderit voluptatum rem. Culpa, impedit.
+                            </p>
+                            <h2><u>Why it is important?</u></h2>
+                            <p>Learning Spanish is important because it is one of the most widely spoken languages in the world. It improves communication skills and
+                                cultural awareness, making it useful for travel, business, and international relations. Studying a foreign language also improves memory,
+                                problem-solving, and multitasking abilities. Spanish is beneficial for careers in translation, tourism, international business,
+                                and diplomacy.</p>
+                        </div>
+                        <div class="tab-pane mt-5" id="business">
+                            <h1><b>Business Studies</b></h1>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum nam explicabo, exercitationem minus iste quod ipsam hic, cupiditate vel odit error quasi aperiam quisquam non maxime fugiat sapiente perferendis aliquid.
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure aut error officia sunt quo nihil dolor hic mollitia obcaecati ratione, eveniet doloremque temporibus amet exercitationem, quas alias, dolorum vitae non.
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat quod cupiditate incidunt voluptatem nihil labore ex beatae, commodi velit dignissimos explicabo reiciendis recusandae fuga ipsa reprehenderit voluptatum rem. Culpa, impedit.
+                            </p>
+                            <h2><u>Why it is important?</u></h2>
+                            <p>Business Studies teaches students about entrepreneurship, marketing, finance, and management. It helps students understand how businesses operate,
+                                from small startups to global corporations. This subject develops leadership, problem-solving, and decision-making skills,
+                                which are useful for running a business or working in corporate environments. Business knowledge is valuable in careers like marketing,
+                                finance, management, and international trade.
+                            </p>
+                        </div>
+                        <div class="tab-pane mt-5" id="Physical_edu">
+                            <h1><b>Physical Education (PE)</b></h1>
+                            <p>Physical Education is important for promoting a healthy lifestyle and teaching the benefits of exercise.
+                                It helps students develop physical fitness, teamwork, and discipline. PE also covers topics like anatomy,
+                                sports psychology, and nutrition. It is useful for careers in sports, healthcare, fitness training, and physiotherapy.
+                                Additionally, staying active improves mental well-being and reduces stress.
+                            </p>
+                            <h2><u>Why it is important?</u></h2>
+                            <p>Mathematics B covers core mathematical skills that are essential in daily life and many careers. It includes algebra, geometry,
+                                statistics, and probability, helping students develop problem-solving and logical thinking skills. Math is the foundation for fields
+                                like engineering, finance, computing, and data science. Even in everyday life, math is used for budgeting, measuring,
+                                and decision-making</p>
+                        </div>
+                        <div class="tab-pane mt-5" id="drama">
+                            <h1><b>Drama</b></h1>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum nam explicabo, exercitationem minus iste quod ipsam hic, cupiditate vel odit error quasi aperiam quisquam non maxime fugiat sapiente perferendis aliquid.
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure aut error officia sunt quo nihil dolor hic mollitia obcaecati ratione, eveniet doloremque temporibus amet exercitationem, quas alias, dolorum vitae non.
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat quod cupiditate incidunt voluptatem nihil labore ex beatae, commodi velit dignissimos explicabo reiciendis recusandae fuga ipsa reprehenderit voluptatum rem. Culpa, impedit.
+                            </p>
+                            <h2><u>Why it is important?</u></h2>
+                            <p>Drama helps students build confidence, creativity, and communication skills. It teaches acting techniques, script analysis,
+                                and stage production. Drama also improves teamwork, emotional expression, and public speaking, which are useful in many careers
+                                beyond acting, such as teaching, media, marketing, and event management. It helps students develop empathy and understand
+                                different perspectives through storytelling.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>    
+</body>
+</html>
+ 
